@@ -1,6 +1,7 @@
 ﻿//using Demo.Example_01;
 //using Demo.Example02;
 using Demo.Interface;
+using System.Text;
 
 
 namespace Demo
@@ -169,8 +170,9 @@ namespace Demo
 
             #endregion
 
-            #region Reference type
+            #region Reference type array
 
+            #region Array of Immutable type [string]
             //string[] names01 = ["Amer", "Omer"];
             //string[] names02 = new string[2];
 
@@ -212,6 +214,65 @@ namespace Demo
             //Console.WriteLine(names02.GetHashCode());
 
             #endregion
+
+
+            #endregion
+
+            #region Array of mutable type[stringBuilder]
+
+            //StringBuilder[] name1 = [new StringBuilder("Amer")];
+
+            //StringBuilder[] name2 = new StringBuilder[1];
+
+            //Console.WriteLine(name1.GetHashCode());
+            //Console.WriteLine(name2.GetHashCode());
+
+
+
+            #region Shallow copy 
+
+            //name2 = name1;
+
+            //Console.WriteLine("After Shallow copy ");
+            //Console.WriteLine(name2.GetHashCode()); 
+            //Console.WriteLine(name1.GetHashCode());
+            //Console.WriteLine(name2[0]);
+            //Console.WriteLine(name1[0]);
+            //name2[0].Append("Ahmed Gamal");
+
+            //Console.WriteLine(name2.GetHashCode());
+            //Console.WriteLine(name1.GetHashCode());
+            //Console.WriteLine(name2[0]);
+            //Console.WriteLine(name1[0]);
+
+
+
+
+
+            #endregion
+            #region Deep Copy
+
+            //name2 = (StringBuilder[])name1.Clone();
+
+
+            //Console.WriteLine("After Deep copy ");
+            //Console.WriteLine(name2.GetHashCode());
+            //Console.WriteLine(name1.GetHashCode());
+            //Console.WriteLine(name2[0]);
+            //Console.WriteLine(name1[0]);
+
+
+            //name2[0].Append("Ahmed");
+            //Console.WriteLine(name2.GetHashCode());
+            //Console.WriteLine(name1.GetHashCode());
+            //Console.WriteLine(name2[0]);
+            //Console.WriteLine(name1[0]);
+
+            #endregion
+
+            #endregion
+
+
             #endregion
 
 
