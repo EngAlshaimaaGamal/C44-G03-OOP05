@@ -1,4 +1,5 @@
 ﻿using Demo.Example_01;
+using Demo.Example02;
 using Demo.Interface;
 
 
@@ -74,7 +75,7 @@ namespace Demo
             //PrintTheNumberOfSeries(typeB);  
 
 
-            
+
 
 
 
@@ -82,7 +83,45 @@ namespace Demo
             #endregion
 
 
+            #region Example 02
 
+            //Car c1 = new Car();
+            //c1.Backward();
+             // implacit implemention
+            //c1.Forward();   
+
+            //c1.Left();  
+
+            //c1.Right();
+            //c1.speed = 500;
+            //Console.WriteLine(c1.speed);  
+
+           // Airplane A1 = new Airplane();
+           // A1.speed = 1;
+           // A1.Forward();
+           //// A1.Backward(); // invalide 
+
+           // IMoveOnAir A2 = new Airplane(); // using interface  by referenc of interface (explecit implemention)
+           // A2.Backward();
+           // A2.Forward();   
+           //A2.Left();   
+           //// A2.Right(); ; // invalid
+
+           // IMoveOnGround A3 = new Airplane();  
+           // A3.Backward();  
+           // A3.Forward();   
+           // A3.Left();  
+           // A3.Right();
+
+
+
+
+
+
+
+
+
+            #endregion
 
 
 
