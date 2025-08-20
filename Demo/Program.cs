@@ -1,5 +1,6 @@
 ﻿//using Demo.Example_01;
 //using Demo.Example02;
+using Demo.Builtin_interface;
 using Demo.Interface;
 using System.Text;
 
@@ -278,6 +279,46 @@ namespace Demo
 
 
 
+
+
+
+
+            #endregion
+
+            #region IClonable
+
+            //Employee e1 = new Employee() { Id = 2, Name = "Ahmed", Salary = 5000 };
+
+
+            //Employee e2 = new Employee() { Id = 3, Name = "Amer", Salary = 9000 };
+            
+
+            //Console.WriteLine(e1);
+            //Console.WriteLine(e2);
+            // // shallow copy
+            ////e2 = e1;
+            ////Console.WriteLine(e1);
+            ////Console.WriteLine(e2);
+
+
+
+
+            // // Deep copy By clone method
+            //e2 = (Employee)e1.Clone();
+            //Console.WriteLine(e2.GetHashCode());
+            //Console.WriteLine(e1.GetHashCode());    
+            //Console.WriteLine(e1);
+            //Console.WriteLine(e2);
+
+
+            //// copy constructor
+
+            //Employee e3 = new Employee(e1);
+
+            //Console.WriteLine("After copy constructor");  
+            //Console.WriteLine(e3.GetHashCode());
+
+            //Console.WriteLine(e3);  
 
 
 
