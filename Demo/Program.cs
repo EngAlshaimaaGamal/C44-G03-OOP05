@@ -1,4 +1,5 @@
-﻿using Demo.Interface;
+﻿using Demo.Example_01;
+using Demo.Interface;
 
 
 namespace Demo
@@ -6,6 +7,39 @@ namespace Demo
 {
     internal class Program
     {
+
+        public static void PrintTheNumberOfSeries(ISeriers? series) 
+        {
+            if (series is not null) 
+            {
+
+                for (int i = 0; i < 5; i++)
+                {
+                    Console.WriteLine($"Current  =  {series.Current}");
+                    series.GetNext();
+
+
+                }
+
+                series.Reset();
+
+
+
+            }
+           
+           else 
+            {
+                return;
+            
+            
+            }
+
+
+
+
+        }
+
+
         static void Main(string[] args)
         {
 
@@ -28,6 +62,26 @@ namespace Demo
 
 
             #endregion
+
+            #region Example 01 
+
+            //Type_A typeA = new Type_A();
+            //PrintTheNumberOfSeries(typeA);
+
+
+            //Console.WriteLine("===================================");
+            //TypeB typeB = new TypeB();
+            //PrintTheNumberOfSeries(typeB);  
+
+
+            
+
+
+
+
+            #endregion
+
+
 
 
 
