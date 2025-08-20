@@ -291,7 +291,7 @@ namespace Demo
 
 
             //Employee e2 = new Employee() { Id = 3, Name = "Amer", Salary = 9000 };
-            
+
 
             //Console.WriteLine(e1);
             //Console.WriteLine(e2);
@@ -319,6 +319,51 @@ namespace Demo
             //Console.WriteLine(e3.GetHashCode());
 
             //Console.WriteLine(e3);  
+
+
+
+
+            #endregion
+
+
+            #region  IComparable
+
+
+            //int[] arr1 = [1, 2, 3, 4, 5, 6];
+            // Array.Sort(arr1);
+            //foreach (int item in arr1) 
+            //{
+
+            //    Console.WriteLine(item);
+
+
+
+
+            //}
+
+
+
+            //Employee[] emp1 =
+            //{
+            //    new Employee() {Id=10 , Name = "Ahmed" ,Salary=5000 } ,
+            //    new Employee() {Id=20 ,Name ="Ali" ,Salary=6000 },
+            //    new Employee() {Id=21 , Name= "Omer" ,Salary=9000 }
+
+
+
+            //};
+
+            //Array.Sort(emp1);  //.InvalidOperationException
+
+            //Array.Reverse(emp1);
+
+            //foreach (Employee item in emp1) 
+            //{
+            //    Console.WriteLine(item);
+            
+            
+            
+            //}
 
 
 

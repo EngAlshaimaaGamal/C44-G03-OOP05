@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Demo.Builtin_interface
 {
-    internal class Employee : ICloneable
+    internal class Employee : ICloneable  ,IComparable<Employee>
     {
       
         public int Id { get; set; }
@@ -59,8 +59,18 @@ namespace Demo.Builtin_interface
         
         }
 
+        public int CompareTo(Employee? emp1)
+        {
 
-
-
+            //if (this.Salary > emp1?.Salary)
+            //    return 1;
+            //else if(this.Salary<emp1?.Salary)
+            //    return -1;
+            //else
+            //    return 0;
+            //    
+            return this .Salary.CompareTo(emp1?.Salary);    
+            
+        }
     }
 }
