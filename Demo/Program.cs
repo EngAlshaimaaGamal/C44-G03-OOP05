@@ -1,5 +1,5 @@
-﻿using Demo.Example_01;
-using Demo.Example02;
+﻿//using Demo.Example_01;
+//using Demo.Example02;
 using Demo.Interface;
 
 
@@ -9,7 +9,7 @@ namespace Demo
     internal class Program
     {
 
-        public static void PrintTheNumberOfSeries(ISeriers? series) 
+        /*public static void PrintTheNumberOfSeries(ISeriers? series) 
         {
             if (series is not null) 
             {
@@ -39,7 +39,7 @@ namespace Demo
 
 
         }
-
+        */
 
         static void Main(string[] args)
         {
@@ -87,7 +87,7 @@ namespace Demo
 
             //Car c1 = new Car();
             //c1.Backward();
-             // implacit implemention
+            // implacit implemention
             //c1.Forward();   
 
             //c1.Left();  
@@ -96,22 +96,22 @@ namespace Demo
             //c1.speed = 500;
             //Console.WriteLine(c1.speed);  
 
-           // Airplane A1 = new Airplane();
-           // A1.speed = 1;
-           // A1.Forward();
-           //// A1.Backward(); // invalide 
+            // Airplane A1 = new Airplane();
+            // A1.speed = 1;
+            // A1.Forward();
+            //// A1.Backward(); // invalide 
 
-           // IMoveOnAir A2 = new Airplane(); // using interface  by referenc of interface (explecit implemention)
-           // A2.Backward();
-           // A2.Forward();   
-           //A2.Left();   
-           //// A2.Right(); ; // invalid
+            // IMoveOnAir A2 = new Airplane(); // using interface  by referenc of interface (explecit implemention)
+            // A2.Backward();
+            // A2.Forward();   
+            //A2.Left();   
+            //// A2.Right(); ; // invalid
 
-           // IMoveOnGround A3 = new Airplane();  
-           // A3.Backward();  
-           // A3.Forward();   
-           // A3.Left();  
-           // A3.Right();
+            // IMoveOnGround A3 = new Airplane();  
+            // A3.Backward();  
+            // A3.Forward();   
+            // A3.Left();  
+            // A3.Right();
 
 
 
@@ -122,6 +122,111 @@ namespace Demo
 
 
             #endregion
+
+
+            #region Shallow copy and Deep copy 
+
+            #region value type 
+
+
+            //int[] arr1 = [1, 2, 3, 5];
+            //int[] arr2 =new int[5];
+
+            //Console.WriteLine(arr1[0]);
+            //Console.WriteLine(arr2[0]); 
+            //Console.WriteLine(arr1.GetHashCode());
+            //Console.WriteLine(arr2.GetHashCode());  
+
+
+            //#region Shallow copy
+
+            //arr2 = arr1; // copy of identity (address)
+
+            //Console.WriteLine("After shallow copy");
+            //Console.WriteLine(arr1[0]);
+            //Console.WriteLine(arr2[0]);
+            //Console.WriteLine(arr1.GetHashCode());
+            //Console.WriteLine(arr2.GetHashCode());
+
+
+
+
+            //#endregion
+            //#region Deep Copy
+            //arr2 = (int[])arr1.Clone(); // deep copy  in heap
+            //                                // create new object and get  copy od states instance
+            //                                // inside shallow copy with same  value / caller
+            //Console.WriteLine("After shallow Deep");
+            //Console.WriteLine(arr1[0]);
+            //Console.WriteLine(arr2[0]);
+            //Console.WriteLine(arr1.GetHashCode());
+            //Console.WriteLine(arr2.GetHashCode());
+
+            //arr1[0] = 100;
+            //Console.WriteLine(arr1[0]);
+            //Console.WriteLine(arr2[0]); 
+
+
+            #endregion
+
+            #region Reference type
+
+            //string[] names01 = ["Amer", "Omer"];
+            //string[] names02 = new string[2];
+
+            //Console.WriteLine(names01[0]); // Amer
+            //Console.WriteLine(names02[0]); // null
+            //Console.WriteLine(names01.GetHashCode());
+            //Console.WriteLine(names02.GetHashCode());
+
+            #region Shallow copy
+
+            //names01 = names02;
+
+            //Console.WriteLine("After Shallow copy");
+            //Console.WriteLine(names01[0]); //amer
+            //Console.WriteLine(names02[0]);//amer
+            //Console.WriteLine(names01.GetHashCode());
+            //Console.WriteLine(names02.GetHashCode());
+
+
+
+            #endregion
+
+            #region DeepCopy
+
+            //names02 = (string[])names01.Clone();
+            //Console.WriteLine("After deep copy");
+            //Console.WriteLine(names01[0]); 
+            //Console.WriteLine(names02[0]);
+            //Console.WriteLine(names01[1]);
+            //Console.WriteLine(names02[1]);
+            //Console.WriteLine(names01.GetHashCode());
+            //Console.WriteLine(names02.GetHashCode());
+
+            //names01[0] = "shaimaa";
+
+            //Console.WriteLine(names01[0]);
+            //Console.WriteLine(names02[0]);
+            //Console.WriteLine(names01.GetHashCode());
+            //Console.WriteLine(names02.GetHashCode());
+
+            #endregion
+            #endregion
+
+
+
+
+
+
+
+
+            #endregion
+
+
+
+
+
 
 
 
