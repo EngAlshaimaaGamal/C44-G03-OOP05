@@ -360,9 +360,9 @@ namespace Demo
             //foreach (Employee item in emp1) 
             //{
             //    Console.WriteLine(item);
-            
-            
-            
+
+
+
             //}
 
 
@@ -371,7 +371,32 @@ namespace Demo
             #endregion
 
 
+            #region IComparer
 
+            //Employee[] emp1 =
+            //{
+            //    new Employee() {Id=10 , Name = "Ahmed" ,Salary=5000 } ,
+            //    new Employee() {Id=20 ,Name ="Ali" ,Salary=6000 },
+            //    new Employee() {Id=21 , Name= "Omer" ,Salary=9000 }
+
+
+
+            //};
+
+            //Array.Sort(emp1, new EmployeeComparerName()); 
+            //Array.Reverse(emp1);
+
+            //foreach (Employee item in emp1)
+            //{
+            //    Console.WriteLine(item);
+
+
+
+            //}
+
+
+
+            #endregion
 
 
 
